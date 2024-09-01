@@ -9,7 +9,7 @@ const RegisterUser = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/users/register', { username, password, role }, {
+      await axios.post('https://stockmanagementsystem-server.vercel.app/api/users/register', { username, password, role }, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('authToken')}`,
         }

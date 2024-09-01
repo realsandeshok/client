@@ -10,7 +10,7 @@ const UserList = () => {
     const fetchUsers = async () => {
         try {
             const token = localStorage.getItem('authToken');  // Get the token from localStorage
-            const { data } = await axios.get('http://localhost:5000/api/users', {
+            const { data } = await axios.get('https://stockmanagementsystem-server.vercel.app/api/users', {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
