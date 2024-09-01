@@ -25,7 +25,7 @@ const UserList = () => {
 
   const handleRemoveUser = async (userId) => {
     try {
-      await axios.delete(`http://localhost:5000/api/users/${userId}`);
+      await axios.delete(`https://stockmanagementsystem-server.onrender.com/api/users/${userId}`);
       setUsers(users.filter(user => user._id !== userId));
     } catch (error) {
       console.error('Failed to remove user:', error);

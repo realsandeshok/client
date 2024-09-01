@@ -28,7 +28,7 @@ const handleUpdate = async (productId, updatedFields) => {
       };
 
       const { data: updatedProduct } = await axios.put(
-        `http://localhost:5000/api/products/${productId}`, 
+        `https://stockmanagementsystem-server.onrender.com/api/products/${productId}`, 
         updatedFields, 
         config
       );
