@@ -9,7 +9,7 @@ const AdminPanel = () => {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const { data } = await axios.get('https://stockmanagementsystem-server.vercel.app/api/products');
+      const { data } = await axios.get('https://stockmanagementsystem-server.onrender.com/api/products');
       setProducts(data);
     };
     fetchProducts();

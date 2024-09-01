@@ -10,7 +10,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post('https://stockmanagementsystem-server.vercel.app/api/users/authUser', {
+      const { data } = await axios.post('https://stockmanagementsystem-server.onrender.com/api/users/authUser', {
         username,
         password,
       });
